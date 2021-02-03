@@ -1,0 +1,6 @@
+rails g resource User username password_digest 
+rails g resource Property country city latitude:integer longitude:integer image_photo user:belongs_to
+rails g resource Room occupancy_size:integer price_per_night:integer user:belongs_to
+rails g resource Local_attraction category description
+rails g resourse Ammenity name
+rails g resource Reservation start_date:Date end_date:Date room:belongs_to user:belongs_to
